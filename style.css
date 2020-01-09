@@ -1,0 +1,87 @@
+:root {
+    --main-color: #E3000D;
+    --black: #0D0D0D;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    background: linear-gradient(to right, rgba(2,110,153,1) 0%, rgba(78,135,156,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#026e99', endColorstr='#4e879c', GradientType=1 );
+    height: 100vh;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.title {
+    font-size: 34px;
+    color: var(--main-color);
+    display: flex;
+}
+
+.title__magic {
+    background-color: var(--main-color);
+    color: var(--black);
+    padding: 5px 20px;
+}
+
+.title__ball {
+    background-color: var(--black);
+    padding: 5px 20px;
+}
+
+.app {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+.app__question {
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.app__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 24px;
+    border: none;
+    background: var(--main-color);
+    color: var(--black);
+    height: 200px;
+    width: 200px;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 50%;
+    
+}
+
+.app__btn:hover {
+    cursor: pointer;
+}
+
+.app__btn--show {
+    animation: show 3s 1 linear;
+}
+
+@keyframes show {
+    from {
+        color: var(--main-color);
+    }
+    to {
+        color: var(--black);
+    }
+}
+
